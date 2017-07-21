@@ -7,7 +7,7 @@ https://api.educatorshandbook.com/public/v1/incidents.xml
 ## Authorization
 All API requests must include an Authorization header containing a valid client access token in OAuth 2 Bearer Token format (i.e. `Authorization Bearer ClientAccessToken`).  Any request that does not contain a valid token will fail and return a `401 Unauthorized` response.
 
-Client access tokens are managed via the integration settings in your EducatorsHandbook.com account.  Anyone in possession of a valid client access token will have full access to the data in your account – they should be protected like a password.  We strongly recommend using a different token for each integration or script that will be making API requests.
+Client access tokens are managed via the API client settings in your EducatorsHandbook.com account.  Anyone in possession of a valid client access token will have full access to the data in your account – they should be protected like a password.  We strongly recommend using a different token for each integration or script that will be making API requests.
 
 ## Optional Query Parameters
 By default, the API will return all incidents from the current school term paginated to 1,000 members.  Use the following query parameters to alter this behavior.
