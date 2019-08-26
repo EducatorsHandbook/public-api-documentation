@@ -10,7 +10,7 @@ All API requests must include an Authorization header containing a valid client 
 Client access tokens are managed via the API client settings in your EducatorsHandbook.com account.  **API client settings are hidden by default.  Open the settings view and press the `SHIFT` key twice to enable advanced settings.**  Anyone in possession of a valid client access token will have full access to the data in your account – they should be protected like a password.  We strongly recommend using a different token for each integration or script that will be making API requests.
 
 ## Optional Query Parameters
-By default, the API will return all incidents from the current school term paginated to 1,000 members.  Use the following query parameters to alter this behavior.
+By default, the API will return all incidents from the current school year paginated to 1,000 members.  Use the following query parameters to alter this behavior.
 
 ##### `page={integer}`
 Use the `page` parameter to request a specific page of results.  Page numbering is 1-based.  Omitting the `page` parameter will return the first page of results.  The current page and total number of pages are reported in the root node's `page` and `total-pages` attributes.
