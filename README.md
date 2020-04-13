@@ -29,7 +29,7 @@ Members are returned inside of an `incidents` root node that has `count`, `page`
 
 ```xml
 <incidents count="{integer}" page="{integer}" total-pages="{integer}">
-  <incident uuid="{string}" type="{string}" last-modified="{datetime}" deleted="{integer}">
+  <incident uuid="{string}" type="{string}" last-modified="{datetime}" bounced="{integer}" deleted="{integer}">
     <date>{date}</date>
     <time>{time}</time>
     <written-by datetime="{datetime}" district-id="{string}">{string}</written-by>
