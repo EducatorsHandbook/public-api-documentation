@@ -39,6 +39,9 @@ Members are returned inside of an `incidents` root node that has `count`, `page`
     <arrangement code="{string}">{string}</arrangement>
     <offense code="{string}">{string}</offense>
     <description>{string}</description>
+    <attributes count="{integer}">
+      <!-- ... -->
+    </attributes>
     <offenders count="{integer}">
       <offender>
         <student district-id="{string}">
@@ -50,7 +53,11 @@ Members are returned inside of an `incidents` root node that has `count`, `page`
           <iep>{boolean}</iep>
           <plan>{boolean}</plan>
           <ell>{boolean}</ell>
+          <homeless>{boolean}</homeless>
+          <foster>{boolean}</foster>
+          <frpl>{boolean}</frpl>
         </student>
+        <injury code="{string}">{string}</injury>
         <offenses count="{integer}">
           <offense code="{string}">{string}</offense>
           <!-- ... -->
@@ -59,7 +66,6 @@ Members are returned inside of an `incidents` root node that has `count`, `page`
           <weapon code="{string}">{string}</weapon>
           <!-- ... -->
         </weapons>
-        <injury code="{string}">{string}</injury>
         <actions count="{integer}">
           <action code="{string}" cost="{boolean}">
             <name>{string}</name>
@@ -74,6 +80,9 @@ Members are returned inside of an `incidents` root node that has `count`, `page`
               <!-- ... -->
             </schedule>
             <details>{string}</details>
+            <attributes count="{integer}">
+              <!-- ... -->
+            </attributes>
             <assigned-by datetime="{datetime}" district-id="{string}">{string}</assigned-by>
           </action>
           <!-- ... -->
@@ -92,7 +101,21 @@ Members are returned inside of an `incidents` root node that has `count`, `page`
           <iep>{boolean}</iep>
           <plan>{boolean}</plan>
           <ell>{boolean}</ell>
+          <homeless>{boolean}</homeless>
+          <foster>{boolean}</foster>
+          <frpl>{boolean}</frpl>
         </student>
+        <injury code="{string}">{string}</injury>
+        <attributes count="{integer}">
+          <!-- ... -->
+        </attributes>
+      </victim>
+      <victim>
+        <employee district-id="{string}">{string}</employee>
+        <injury code="{string}">{string}</injury>
+        <attributes count="{integer}">
+          <!-- ... -->
+        </attributes>
       </victim>
       <!-- ... -->
     </victims>
